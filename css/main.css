@@ -272,17 +272,6 @@ a.navbar-brand {
     height: 360px;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    .card {
-        border-radius: 20px;
-        padding: 0px 10px;
-        font-size: 20px;
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
-        border: none !important;
-    }
-}
-
 .card-item .img-produto img {
     width: 100%;
     border-radius: 11px;
@@ -376,6 +365,25 @@ a.navbar-brand {
 }
 .card-item:hover .title-descricao {
     color: #fff!important;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .card {
+        border-radius: 20px;
+        padding: 0px 10px;
+        font-size: 20px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+        border: none !important;
+    }
+    .card-item .title-descricao {
+        color: var(--color-primary);
+        text-overflow: ellipsis;
+        white-space: normal;
+        overflow: visible;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
 }
 
 .depoimentos {
