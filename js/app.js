@@ -630,7 +630,7 @@ produto.metodos = {
                 texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
             }
     
-            texto += `\n\n*Total (se optado com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
+            texto += `\n\n*Total (se optado com entrega, consultar frete): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
     
             let itens = '';
             $.each(MEU_CARRINHO, (i, e) => {
